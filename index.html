@@ -4,64 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>726 Imports | Parlantes JBL Go 4</title>
-    <!-- Tailwind CSS para un diseño moderno y rápido -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
     </style>
 </head>
-<body class="bg-white text-neutral-900 antialiased selection:bg-black selection:text-white">
+<body class="bg-neutral-900 text-white antialiased selection:bg-orange-500 selection:text-white">
 
-    <!-- Header / Navbar -->
-    <header class="sticky top-0 z-40 backdrop-blur-md bg-white/80 border-b border-neutral-100">
+    <!-- Header / Navbar con estilo oscuro moderno -->
+    <header class="sticky top-0 z-40 backdrop-blur-md bg-neutral-950/80 border-b border-neutral-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Logo basado en la identidad proporcionada -->
             <div class="flex items-center gap-2">
-                <span class="text-2xl font-bold tracking-wider">726 <span class="font-light text-neutral-500">IMPORTS</span></span>
+                <span class="text-2xl font-extrabold tracking-wider">726 <span class="font-light text-orange-500">IMPORTS</span></span>
             </div>
             
             <!-- Botón del Carrito -->
-            <button onclick="toggleCart()" class="relative flex items-center gap-2 bg-neutral-900 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-neutral-800 transition-all">
+            <button onclick="toggleCart()" class="relative flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-neutral-950 px-5 py-2.5 rounded-full text-sm font-bold hover:opacity-90 transition-all shadow-lg shadow-orange-500/20">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                 </svg>
                 <span>Carrito</span>
-                <span id="cart-count" class="bg-white text-neutral-950 text-xs font-bold px-1.5 py-0.5 rounded-full hidden">0</span>
+                <span id="cart-count" class="bg-neutral-950 text-white text-xs font-bold px-1.5 py-0.5 rounded-full hidden">0</span>
             </button>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="py-16 md:py-24 bg-neutral-50">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <span class="inline-block bg-neutral-200 text-neutral-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest mb-4">Importación Directa</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">JBL Go 4</h1>
-            <p class="text-lg text-neutral-600 max-w-2xl mx-auto mb-8">Lleva tu música a todos lados con la máxima potencia y ultra portabilidad. Hacé tu pedido ahora y coordiná directo con nosotros.</p>
+    <!-- Hero Section con acentos de color vibrantes -->
+    <section class="py-16 md:py-24 bg-gradient-to-b from-neutral-950 to-neutral-900 relative overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <span class="inline-block bg-orange-500/10 text-orange-400 border border-orange-500/20 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-widest mb-4">Importación Directa</span>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6">JBL Go 4</h1>
+            <p class="text-lg text-neutral-400 max-w-2xl mx-auto mb-8">Lleva tu música a todos lados con máxima potencia, diseño ultra compacto y la mejor calidad de sonido.</p>
         </div>
     </section>
 
     <!-- Catálogo de Productos -->
     <main class="max-w-7xl mx-auto px-6 py-16">
-        <h2 class="text-2xl font-bold mb-8">Catálogo Disponible</h2>
+        <h2 class="text-2xl font-bold mb-8 flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span> Catálogo Disponible
+        </h2>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="product-list">
-            <!-- Producto: JBL Go 4 -->
-            <div class="group border border-neutral-200 rounded-2xl p-6 bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <!-- Producto: JBL Go 4 con imagen actualizada -->
+            <div class="group border border-neutral-800 rounded-2xl p-6 bg-neutral-950 hover:border-orange-500/50 transition-all duration-300 flex flex-col justify-between shadow-xl">
                 <div>
-                    <div class="bg-neutral-100 rounded-xl overflow-hidden mb-6 aspect-square flex items-center justify-center">
-                        <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&q=80&w=800" alt="JBL Go 4" class="object-cover h-full w-full group-hover:scale-105 transition-transform duration-500">
+                    <div class="bg-neutral-900 rounded-xl overflow-hidden mb-6 aspect-square flex items-center justify-center p-4 border border-neutral-800/60">
+                        <img src="JBL_GO_4_3_4_LEFT_BLACK_48178_x1.jpg" alt="JBL Go 4" class="object-contain h-full w-full group-hover:scale-105 transition-transform duration-500">
                     </div>
-                    <span class="text-xs text-neutral-400 uppercase tracking-wider">Parlante Portátil</span>
+                    <span class="text-xs text-orange-400 font-semibold uppercase tracking-wider">Parlante Portátil</span>
                     <h3 class="text-xl font-bold mt-1 mb-2">JBL Go 4</h3>
-                    <p class="text-neutral-500 text-sm mb-4">Excelente calidad de sonido, ultra compacto y resistencia al agua IP67.</p>
+                    <p class="text-neutral-400 text-sm mb-4">Excelente definición sonora, ultra portátil y resistencia IP67.</p>
                 </div>
                 <div>
                     <div class="flex items-center justify-between mb-4">
-                        <span class="text-2xl font-extrabold">$60.000</span>
-                        <span class="text-xs text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md font-medium">Por Encargo</span>
+                        <span class="text-2xl font-extrabold text-white">$60.000</span>
+                        <span class="text-xs text-orange-400 bg-orange-500/10 border border-orange-500/20 px-2.5 py-1 rounded-md font-medium">Por Encargo</span>
                     </div>
-                    <button onclick="addToCart('JBL Go 4', 60000)" class="w-full bg-neutral-900 text-white py-3 rounded-xl font-medium hover:bg-black transition-colors">
+                    <button onclick="addToCart('JBL Go 4', 60000)" class="w-full bg-orange-500 text-neutral-950 py-3 rounded-xl font-bold hover:bg-orange-400 transition-colors shadow-lg shadow-orange-500/10">
                         Agregar al Carrito
                     </button>
                 </div>
@@ -70,12 +72,12 @@
     </main>
 
     <!-- Drawer del Carrito -->
-    <div id="cart-drawer" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex justify-end">
-        <div class="bg-white w-full max-w-md h-full p-6 flex flex-col justify-between shadow-2xl overflow-y-auto">
+    <div id="cart-drawer" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden flex justify-end">
+        <div class="bg-neutral-950 border-l border-neutral-800 w-full max-w-md h-full p-6 flex flex-col justify-between shadow-2xl overflow-y-auto text-white">
             <div>
-                <div class="flex items-center justify-between pb-4 border-b border-neutral-100">
+                <div class="flex items-center justify-between pb-4 border-b border-neutral-800">
                     <h3 class="text-lg font-bold">Tu Carrito de Compras</h3>
-                    <button onclick="toggleCart()" class="text-neutral-400 hover:text-black">
+                    <button onclick="toggleCart()" class="text-neutral-400 hover:text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
@@ -84,28 +86,30 @@
 
                 <!-- Lista de ítems en el carrito -->
                 <div id="cart-items" class="py-6 space-y-4">
-                    <p class="text-neutral-400 text-center py-8">Tu carrito está vacío</p>
+                    <p class="text-neutral-500 text-center py-8">Tu carrito está vacío</p>
                 </div>
             </div>
 
-            <!-- Formulario de datos y botón de WhatsApp -->
-            <div class="border-t border-neutral-100 pt-6">
+            <!-- Formulario de datos y opciones de pago independientes -->
+            <div class="border-t border-neutral-800 pt-6">
                 <div class="space-y-3 mb-4">
-                    <h4 class="text-sm font-semibold text-neutral-700">Datos para el envío / pedido:</h4>
-                    <input type="text" id="client-name" placeholder="Tu Nombre y Apellido" class="w-full px-4 py-2.5 border border-neutral-200 rounded-xl text-sm focus:outline-none focus:border-black">
-                    <input type="text" id="client-address" placeholder="Zona / Dirección de entrega" class="w-full px-4 py-2.5 border border-neutral-200 rounded-xl text-sm focus:outline-none focus:border-black">
-                    <select id="client-payment" class="w-full px-4 py-2.5 border border-neutral-200 rounded-xl text-sm focus:outline-none focus:border-black bg-white">
-                        <option value="Efectivo / Transferencia">Efectivo / Transferencia</option>
-                        <option value="Acordar con el vendedor">Acordar con el vendedor</option>
+                    <h4 class="text-sm font-semibold text-neutral-300">Datos para el envío / pedido:</h4>
+                    <input type="text" id="client-name" placeholder="Tu Nombre y Apellido" class="w-full px-4 py-2.5 bg-neutral-900 border border-neutral-800 rounded-xl text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-orange-500">
+                    <input type="text" id="client-address" placeholder="Zona / Dirección de entrega" class="w-full px-4 py-2.5 bg-neutral-900 border border-neutral-800 rounded-xl text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-orange-500">
+                    
+                    <label class="block text-xs font-semibold text-neutral-400 mt-2">Método de pago:</label>
+                    <select id="client-payment" class="w-full px-4 py-2.5 bg-neutral-900 border border-neutral-800 rounded-xl text-sm text-white focus:outline-none focus:border-orange-500">
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="Transferencia">Transferencia</option>
                     </select>
                 </div>
 
                 <div class="flex justify-between items-center mb-4">
-                    <span class="font-medium text-neutral-600">Total:</span>
-                    <span id="cart-total" class="text-2xl font-bold">$0</span>
+                    <span class="font-medium text-neutral-400">Total:</span>
+                    <span id="cart-total" class="text-2xl font-bold text-white">$0</span>
                 </div>
 
-                <button onclick="checkoutWhatsApp()" class="w-full bg-emerald-600 text-white py-3.5 rounded-xl font-medium hover:bg-emerald-700 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20">
+                <button onclick="checkoutWhatsApp()" class="w-full bg-emerald-600 text-white py-3.5 rounded-xl font-bold hover:bg-emerald-500 transition-colors flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                     Hacer Pedido por WhatsApp
                 </button>
@@ -113,10 +117,10 @@
         </div>
     </div>
 
-    <!-- Script de Lógica del Carrito y WhatsApp -->
+    <!-- Script de Lógica -->
     <script>
         let cart = [];
-        const whatsappNumber = "5493513986699"; // Número de tu socio actualizado
+        const whatsappNumber = "5493513986699";
 
         function toggleCart() {
             const drawer = document.getElementById('cart-drawer');
@@ -140,7 +144,7 @@
             const cartTotal = document.getElementById('cart-total');
 
             if (cart.length === 0) {
-                cartItemsContainer.innerHTML = `<p class="text-neutral-400 text-center py-8">Tu carrito está vacío</p>`;
+                cartItemsContainer.innerHTML = `<p class="text-neutral-500 text-center py-8">Tu carrito está vacío</p>`;
                 cartCount.classList.add('hidden');
                 cartTotal.innerText = '$0';
                 return;
@@ -153,12 +157,12 @@
             cartItemsContainer.innerHTML = cart.map((item, index) => {
                 total += item.price * item.quantity;
                 return `
-                    <div class="flex items-center justify-between bg-neutral-50 p-3 rounded-xl">
+                    <div class="flex items-center justify-between bg-neutral-900 border border-neutral-800 p-3 rounded-xl">
                         <div>
-                            <h5 class="font-bold text-sm">${item.name}</h5>
-                            <p class="text-xs text-neutral-500">$${item.price.toLocaleString()} x ${item.quantity}</p>
+                            <h5 class="font-bold text-sm text-white">${item.name}</h5>
+                            <p class="text-xs text-neutral-400">$${item.price.toLocaleString()} x ${item.quantity}</p>
                         </div>
-                        <button onclick="removeFromCart(${index})" class="text-red-500 text-xs font-semibold hover:underline">Eliminar</button>
+                        <button onclick="removeFromCart(${index})" class="text-red-400 text-xs font-semibold hover:underline">Eliminar</button>
                     </div>
                 `;
             }).join('');
@@ -186,7 +190,6 @@
                 return;
             }
 
-            // Estructura del mensaje solicitado orientada al pedido
             let message = `Hola, soy *${name}*.\nQuiero pedir: `;
             const itemsDescription = cart.map(item => `${item.quantity} ${item.name}${item.quantity > 1 ? 's' : ''}`).join(' y ');
             message += `${itemsDescription}.\n\n*Total:* $${cart.reduce((acc, item) => acc + (item.price * item.quantity), 0).toLocaleString()}\n*Zona de entrega:* ${address}\n*Método de pago:* ${payment}\n\n¿Cómo podemos arreglar?`;
